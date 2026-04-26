@@ -33,7 +33,7 @@ The system integrates the PX4 Autopilot, the Gazebo physics simulator, and a YOL
 *(This project is designed to run inside the standard PX4 SITL Docker container.)*
 
 **1. Clean up and Start the Gazebo World:**
-```bash
+
 # Kill any zombie processes and reset the environment
 pkill -9 px4; pkill -9 gzserver; pkill -9 gzclient; pkill -9 python3
 
@@ -42,7 +42,7 @@ export DISPLAY=:0
 cd /root/projects/PX4-Autopilot
 make px4_sitl gazebo-classic_typhoon_h480
 
-2. Launch the Tracking Node:
+**2. Launch the Tracking Node:**
 In a new terminal attached to the same container:
 Bash
 

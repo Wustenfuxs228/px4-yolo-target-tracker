@@ -6,7 +6,8 @@
 ![YOLOv8](https://img.shields.io/badge/Ultralytics-YOLOv8-yellow.svg)
 ![MAVSDK](https://img.shields.io/badge/MAVSDK-Python-lightgrey.svg)
 
-![Target Tracking Demo](<img width="800" height="450" alt="Screencastfrom2026-04-2613-56-20-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/ad0dd804-ce34-430d-8a6a-effcb4bbc40e" />)
+![Target Tracking Demo](https://github.com/user-attachments/assets/ad0dd804-ce34-430d-8a6a-effcb4bbc40e)
+
 > 🎥 **[Watch the full 45-second demonstration video here (All Flight Modes)](https://youtu.be/20aRas9gDrE)**
 
 ## Overview
@@ -33,7 +34,7 @@ The system integrates the PX4 Autopilot, the Gazebo physics simulator, and a YOL
 *(This project is designed to run inside the standard PX4 SITL Docker container.)*
 
 **1. Clean up and Start the Gazebo World:**
-
+```bash
 # Kill any zombie processes and reset the environment
 pkill -9 px4; pkill -9 gzserver; pkill -9 gzclient; pkill -9 python3
 
@@ -41,14 +42,14 @@ pkill -9 px4; pkill -9 gzserver; pkill -9 gzclient; pkill -9 python3
 export DISPLAY=:0
 cd /root/projects/PX4-Autopilot
 make px4_sitl gazebo-classic_typhoon_h480
-
-**2. Launch the Tracking Node:**
+```
+2. Launch the Tracking Node:
 In a new terminal attached to the same container:
-Bash
+```Bash
 
 export DISPLAY=:0
 NO_AT_BRIDGE=1 python3 /root/projects/threaded_fly.py
-
+```
 Flight Controls
 
 The system utilizes a "Cruise Control" style input method.

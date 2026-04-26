@@ -6,7 +6,8 @@
 ![YOLOv8](https://img.shields.io/badge/Ultralytics-YOLOv8-yellow.svg)
 ![MAVSDK](https://img.shields.io/badge/MAVSDK-Python-lightgrey.svg)
 
-> **Note:** Insert a GIF or short video here demonstrating the drone tracking a vehicle with the HUD visible.
+![Target Tracking Demo](<img width="800" height="450" alt="Screencastfrom2026-04-2613-56-20-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/ad0dd804-ce34-430d-8a6a-effcb4bbc40e" />)
+> 🎥 **[Watch the full 45-second demonstration video here (All Flight Modes)](https://youtu.be/20aRas9gDrE)**
 
 ## Overview
 This project implements a Software-In-The-Loop (SITL) simulation for an autonomous UAV capable of visually detecting and dynamically tracking moving targets (vehicles, trucks, boats). 
